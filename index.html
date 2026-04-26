@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Es Biji Salak</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="logo">
+                    <h2><i class="fas fa-store"></i> Ungu Melt Shop</h2>
+                </div>
+                <ul class="nav-menu">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#products">Produk</a></li>
+                    <li><a href="#about">Tentang</a></li>
+                    <li><a href="#contact">Kontak</a></li>
+                </ul>
+                <div class="cart-icon">
+                    <i class="fas fa-shopping-cart"></i>
+                    <span class="cart-count" id="cartCount">0</span>
+                </div>
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>Selamat Datang di Ungu Melt Shop</h1>
+            <p>Haus? Laper? Tenang, di sini tempatnya Es Biji Salak paling mantap!</p>
+            <a href="#products" class="cta-button">Pesan Sekarang</a>
+        </div>
+    </section>
+
+    <section id="products" class="products">
+        <div class="container">
+            <h2>Menu Andalan Kami</h2>
+            <div class="products-grid" id="productsGrid">
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="about">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-text">
+                    <h2>Tentang Ungu Melt Shop</h2>
+                    <div class="about-stats">
+                        <div class="stat">
+                            <h3>10K+</h3>
+                            <p>Produk Terjual</p>
+                        </div>
+                        <div class="stat">
+                            <h3>5K+</h3>
+                            <p>Pelanggan Puas</p>
+                        </div>
+                    </div>
+                    <p>
+                        <strong>Kenapa kami membuat Ungu Melt Shop?</strong><br>
+                        Ungu Melt Shop dibuat dari ide sederhana:
+                        pengen nyediain minuman tradisional yang enak, murah, dan gampang dijangkau semua orang.
+                        Di tengah banyaknya minuman kekinian, kami pengen ngangkat lagi es biji salak sebagai
+                        minuman khas yang gak kalah nikmat. Kami percaya makanan tradisional punya rasa khas
+                        yang bisa bikin nostalgia, makanya kami berusaha nyajiin es biji salak dengan kualitas terbaik,
+                        rasa autentik, dan tetap cocok dinikmati anak muda zaman sekarang.
+                    </p>
+                    <p>
+                        Didirikan oleh kelompok Lenong Krong pada 2026, Ungu Melt Shop berfokus menyajikan es biji salak
+                        yang enak, fresh, dan berkualitas.
+                        Kami mengutamakan rasa autentik dan kepuasan pelanggan di setiap sajian.
+                    </p>
+                    <a href="#products" class="cta-button">Mulai Pesan</a>
+                </div>
+                <div class="about-image">
+                    <div class="image-placeholder">
+                        <i class="fas fa-store-alt"></i>
+                        <p>Ungu Melt Shop</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="modal" id="cartModal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3>Keranjang Pesanan</h3>
+                <span class="close">&times;</span>
+            </div>
+            <div class="cart-items" id="cartItems">
+            </div>
+            <div class="cart-total">
+                <h3>Total: <span id="cartTotal">Rp 0</span></h3>
+            </div>
+            <button class="checkout-btn" id="checkoutBtn" onclick="checkout()">
+                <i class="fab fa-whatsapp"></i>
+                <span id="checkoutText">Checkout Via Whatsapp</span>
+            </button>
+        </div>
+    </div>
+
+    <footer id="contact">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Ungu Melt Shop</h3>
+                    <p>Tempatnya es biji salak enak, fresh, dan cocok buat nemenin waktu santai lo </p>
+                </div>
+                <div class="footer-section">
+                    <h4>Kontak</h4>
+                    <p><i class="fas fa-phone"></i> 0877-4423-6209</p>
+                    <p><i class="fab fa-tiktok"></i> kaks.gem</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Lenong Krong. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
